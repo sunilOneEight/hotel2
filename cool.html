@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    #jk{
+        width:90%;
+        color: white;
+        margin-bottom:8px;
+        height:65px;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    #ho{
+        width:50%;
+        float: left;
+        background-color: rgb(18, 222, 154);
+        height:100%;
+    }
+    #co{
+        float: right;
+        width:50%;
+        background-color: black;
+        height: 100%;
+    }
+    #cop{
+        width:50%;
+        float: left;
+        height: 100%;
+        text-align: center;
+        line-height: 65px;
+        font-size: large;
+    }
+    #ip{
+        width:50%;
+        float: right;
+        background-color: solid rgb(29, 29, 29);
+        height: 100%;
+        text-align: center;
+        line-height: 65px;
+        font-size: large;
+    }
+    #hom{
+        width:50%;
+        float: left;
+        background-color: solid rgb(43, 226, 192);
+        height: 100%;
+        text-align: center;
+        line-height: 65px;
+        font-size: large;
+    }
+    #menu{
+        width:50%;
+        float: right;
+        background-color:black;
+        height: 100%;
+        text-align: center;
+        line-height: 65px;
+        font-size: large;
+    }
+    #k:hover{
+        background-color:aliceblue;
+        color:black;
+    }
+    #menu:hover{
+        background-color:aliceblue;
+        color:black;
+    }
+    #k{
+        width:343px;
+        height:66px;
+        padding-top:4px;
+        font-size: large;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    #home{
+        width: 343px;
+        height:66px;
+        padding-top:4px;
+        font-size: large;
+        background-color:black;
+        color: white;   
+        border:none; 
+        cursor: pointer;
+    }
+    #hotel{
+        width: 90%;
+        height:500px;
+        margin: auto;
+        color:black;
+        padding-top:200px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-variant: calc();
+    }
+    #well{
+        width:30%;
+        float:left;
+        height:500px;
+        padding-left:20px;
+        font-size:25px;
+    }
+    #man{
+        padding-top: 70px;
+        width:65%;
+        float:right;
+        height:500px;
+        font-size:100px;
+    }
+   #home:hover{
+    background-color: aliceblue;
+    color: black;
+   }
+   #quanti{
+        width:90%;
+        height: 650px;
+        margin:auto;
+        padding-top:70px;
+   }
+   #qua{
+    align-items: center;
+   }
+   #neworder{
+        background-color:rgb(43, 226, 192);
+        color:black;
+        border-radius: 16px;
+   }
+   #neworder:hover{
+        background-color: black;
+        color: white;
+   }
+   #qua{
+        border-radius:16px;
+   }
+   #apply{
+        background-color: rgb(43, 226, 192);
+        border-radius:16px;
+        color:black;
+   }
+   #apply:hover{
+    background-color:black;
+    border-radius:16px;
+    color:white;
+   }
+ </style>
+</head>
+<body>
+    <div id="jk">
+        <div id="ho">
+            <div id="hom">
+                <button id="home"onclick="location.href='index.html'">home</button>
+            </div>
+           <div id="menu">
+            <button id="k"onclick="location.href='aboutlts.html'">main menu</button>
+           </div>
+        </div>
+        <div id="co">
+        <div id="cop"class="op">
+            <button id="k"onclick="location.href='contact.html'">Contact us</button>
+        </div>
+        <div id="ip"class="op">
+            <button id="k"onclick="location.href='login.html'">sign up</button>
+        </div>
+        </div>
+    </div>
+    <div id="quanti">
+        <center>
+        <input type="text" id="qua"placeholder="quantity">
+        <button onclick="quatity()"id="apply">apply</button>
+        <h1 id="price"></h1>
+        <h1 id="res"></h1>
+        <button id="neworder"onclick="location.href='login.html'">order</button>
+        </center>
+    </div>
+</body>
+</html>
+<script>
+    function quatity(){
+         var b=document.getElementById('qua').value;
+         res=parseInt(b)*5;
+         document.getElementById("res").innerHTML=res;
+         document.getElementById("price").innerHTML="total price";
+    }
+</script>
